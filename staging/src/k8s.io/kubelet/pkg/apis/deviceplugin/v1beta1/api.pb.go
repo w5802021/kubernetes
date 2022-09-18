@@ -1274,6 +1274,7 @@ type DevicePluginClient interface {
 	PreStartContainer(ctx context.Context, in *PreStartContainerRequest, opts ...grpc.CallOption) (*PreStartContainerResponse, error)
 }
 
+// 设备插件客户端实现
 type devicePluginClient struct {
 	cc *grpc.ClientConn
 }

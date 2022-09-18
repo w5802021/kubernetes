@@ -20,6 +20,7 @@ import (
 	api "k8s.io/kubelet/pkg/apis/deviceplugin/v1beta1"
 )
 
+// RegistrationHandler 设备插件注册管理
 type RegistrationHandler interface {
 	CleanupPluginDirectory(string) error
 }
